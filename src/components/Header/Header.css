@@ -1,0 +1,92 @@
+.header {
+  padding: 0.4rem 1.2rem;
+  height: 48px;
+  color: #000000;
+  background: #f6c11d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  justify-items: start;
+  align-items: center;
+}
+.logo h1 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  vertical-align: middle;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu p {
+  display: inline-grid;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 9px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 10px;
+}
+
+.menu i {
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.menu img {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background: #f7f7f7;
+  display: grid;
+  position: absolute;
+  border-radius: 0.25em;
+  top: 45px;
+  right: 5px;
+  z-index: 99;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+}
+
+.dropdown-menu a:hover {
+  background: #d6d6d6;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.dropdown-divider {
+  background-color: #bdbdbd;
+  height: 1px;
+  margin: 1px;
+}

@@ -1,0 +1,52 @@
+.login-container {
+  padding: 0.4rem 1.5rem;
+  color: white;
+}
+
+.login-form {
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+}
+
+.login-form input {
+  margin-top: 5px;
+  background-color: #fff;
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  color: #24292e;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 34px;
+  outline: none;
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.login-form ::placeholder {
+  color: #fff;
+}
+
+.login-form button {
+  background: #f13c1f;
+  color: white;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 6px 12px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.login-errors {
+  border: 1px solid #f37043;
+  padding: 10px;
+  color: #f37043;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}

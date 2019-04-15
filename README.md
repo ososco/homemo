@@ -1,2 +1,0 @@
-# homemo
-Created with CodeSandbox
