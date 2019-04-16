@@ -50,18 +50,21 @@ class Dashboard extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    currentUser
+
+    this.props.user
       .updateProfile({
         displayName: this.state.displayName
         // photoURL: this.state.photoURL
       })
-      .then(function() {
+      .then(() => {
+        console.log(this.props.user);
+
         console.log("Name updated successfully to " + this.state.displayName);
       })
       .catch(function(error) {
         console.log(error.message);
       });
-    database.child("/users/" + currentUser.uid).update({
+    database.child("/users/" + this.props.user.uid).update({
       displayName: this.state.displayName
       // photoURL: this.state.photoURL
     });
